@@ -14,7 +14,7 @@ Use like you would any other base image:
 
 ```Dockerfile
 FROM saschpe/android-emulator
-RUN sdkmanager --install cmake;3.22.1
+RUN sdkmanager --install "cmake;3.22.1"
 ```
 
 ## Building
