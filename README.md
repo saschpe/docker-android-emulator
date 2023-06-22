@@ -8,6 +8,17 @@
 Android SDK OCI container image with pre-installed build-tools based on latest
 command-line tools and JDK 11 (or later) as well as the Android Emulator.
 
+## Android SDK and JDK support
+
+The following JDK and Android SDK API level combinations are currently supported:
+
+|    | 11.0.19_7 | 17.0.7_7 |
+|----|-----------|----------|
+| 31 | ✅         | ✅        |
+| 32 | ✅         | ✅        |
+| 33 | ✅         | ✅        |
+| 34 | ✅         | ✅        |
+
 ## Usage
 
 Use like you would any other base image:
