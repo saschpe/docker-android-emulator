@@ -12,12 +12,12 @@ command-line tools and JDK 11 (or later) as well as the Android Emulator.
 
 The following JDK and Android SDK API level combinations are currently supported:
 
-|    | 11.0.19_7 | 17.0.7_7 |
-|----|-----------|----------|
-| 31 | ✅         | ✅        |
-| 32 | ✅         | ✅        |
-| 33 | ✅         | ✅        |
-| 34 | ✅         | ✅        |
+|    | 11.0 | 17.0 |
+|----|------|------|
+| 31 | ✅   | ✅   |
+| 32 | ✅   | ✅   |
+| 33 | ✅   | ✅   |
+| 34 | ✅   | ✅   |
 
 ## Usage
 
