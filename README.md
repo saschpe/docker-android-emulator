@@ -5,19 +5,21 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/saschpe/android-emulator)](https://hub.docker.com/r/saschpe/android-emulator)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/saschpe/android-emulator)](https://hub.docker.com/r/saschpe/android-emulator)
 
-Android SDK OCI container image with pre-installed build-tools based on latest
-command-line tools and JDK 11 (or later) as well as the Android Emulator.
+Android SDK OCI image based on Docker image `saschpe/android-sdk` with
+pre-installed build-tools, latest command-line tools and JDK 11 (or later) as
+well as the Android Emulator.
 
 ## Android SDK and JDK support
 
-The following JDK and Android SDK API level combinations are currently supported:
+The following JDK and Android SDK API level combinations are currently
+available:
 
-|    | 11.0 | 17.0 |
-|----|------|------|
-| 31 | ✅   | ✅   |
-| 32 | ✅   | ✅   |
-| 33 | ✅   | ✅   |
-| 34 | ✅   | ✅   |
+|    | 11.0 | 17.0 | 21.0 |
+|----|------|------|------|
+| 31 | ✅    | ✅    |      |
+| 32 | ✅    | ✅    | ✅    |
+| 33 | ✅    | ✅    | ✅    |
+| 34 | ✅    | ✅    | ✅    |
 
 ## Usage
 
