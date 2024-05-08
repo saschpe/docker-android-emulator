@@ -7,11 +7,11 @@
 #
 # Build with custom arguments:
 #
-#   $ ./scripts/build --android 34 --jdk 17.0.10_7
+#   $ ./scripts/build --android 34 --jdk 22.0.1_8
 #
 
 ARG android=34
-ARG jdk=17.0.10_7
+ARG jdk=22.0.1_8
 
 FROM --platform=linux/amd64 saschpe/android-sdk:${android}-jdk${jdk}
 
