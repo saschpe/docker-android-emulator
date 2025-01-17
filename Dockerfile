@@ -13,7 +13,7 @@
 ARG android=35
 ARG jdk=22.0.2_9
 
-FROM --platform=linux/amd64 saschpe/android-sdk:${android}-jdk${jdk}
+FROM saschpe/android-sdk:${android}-jdk${jdk}
 ARG android
 ARG jdk
 LABEL maintainer="Sascha Peilicke <sascha@peilicke.de"
