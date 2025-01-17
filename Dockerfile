@@ -7,7 +7,7 @@
 #
 # Build with custom arguments:
 #
-#   $ ./scripts/build --android 34 --jdk 22.0.1_8
+#   $ ./scripts/build --android 35 --jdk 22.0.2_9
 #
 
 ARG android=35
