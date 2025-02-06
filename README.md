@@ -24,10 +24,14 @@ available:
 
 ## Usage
 
-Use like you would any other base image:
+```shell
+docker pull saschpe/android-emulator:35-jdk21.0.5_11
+```
+
+Use as a base image:
 
 ```Dockerfile
-FROM saschpe/android-emulator
+FROM saschpe/android-emulator:35-jdk21.0.5_11
 RUN sdkmanager --install "cmake;3.22.1"
 ```
 
