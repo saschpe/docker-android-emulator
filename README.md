@@ -11,28 +11,28 @@ well as the Android Emulator.
 
 ## Android SDK and JDK support
 
-The following JDK and Android SDK API level combinations are currently
+The following JDK (horizontal axis) and Android SDK API level combinations are currently
 available:
 
-|    | 11 | 17 | 21 | 22 |
-|----|----|----|----|----|
-| 31 | ✅  | ✅  |    |    |
-| 32 | ✅  | ✅  | ✅  | ✅  |
-| 33 | ✅  | ✅  | ✅  | ✅  |
-| 34 | ✅  | ✅  | ✅  | ✅  |
-| 35 |    | ✅  | ✅  | ✅  |
+|    | 11 | 17 | 21 | 22 | 23 |
+|----|----|----|----|----|----|
+| 31 | ✅  | ✅  |    |    |    |
+| 32 | ✅  | ✅  | ✅  | ✅  |    |
+| 33 | ✅  | ✅  | ✅  | ✅  |    | 
+| 34 | ✅  | ✅  | ✅  | ✅  | ✅  | 
+| 35 |    | ✅  | ✅  | ✅  | ✅  |
 
 ## Usage
 
 ```shell
-docker pull saschpe/android-emulator:35-jdk21.0.5_11
+docker pull saschpe/android-emulator:35-jdk23.0.2_7
 ```
 
 Use as a base image:
 
 ```Dockerfile
-FROM saschpe/android-emulator:35-jdk21.0.5_11
-RUN sdkmanager --install "cmake;3.22.1"
+FROM saschpe/android-emulator:35-jdk23.0.2_7
+RUN sdkmanager --install "cmake;3.31.5"
 ```
 
 ## Building
