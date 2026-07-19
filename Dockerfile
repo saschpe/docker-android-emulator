@@ -8,7 +8,6 @@
 # Build with custom arguments:
 #
 #   $ ./scripts/build --android 35 --jdk 23.0.2_7
-#
 
 ARG android=35
 ARG jdk=23.0.2_7
@@ -16,7 +15,7 @@ ARG jdk=23.0.2_7
 FROM saschpe/android-sdk:${android}-jdk${jdk}
 ARG android
 ARG jdk
-LABEL maintainer="Sascha Peilicke <sascha@peilicke.de"
+LABEL maintainer="Sascha Peilicke <sascha@peilicke.de>"
 LABEL description="Android SDK ${android} using JDK ${jdk} with Android Emulator"
 
 ENV DEBIAN_FRONTEND=noninteractive
