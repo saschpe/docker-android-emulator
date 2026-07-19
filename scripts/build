@@ -18,7 +18,9 @@ usage() {
   printf "Options:\n"
   printf "  --android API_LEVEL (default: %s)\n" "${DEFAULT_ANDROID}"
   printf "  --jdk VERSION       (default: %s)\n" "${DEFAULT_JDK}"
+  printf "  --docker            (optional, build with Docker)"
   printf "  --platforms         (default: %s)\n" "${DEFAULT_PLATFORMS}"
+  printf "  --podman            (optional, build with Podman)"
   printf "  --push              (optional, upload images to Docker Hub)\n"
   printf "  --verbose           (optional)\n"
   exit 1
@@ -40,7 +42,7 @@ while [ $# -gt 0 ]; do
   --platforms) platforms="$2" shift ;; # past argument
   --podman) tool="podman" ;;
   --push) cmd_push=true ;;
-  --verbose) docker_progress=plain ;;
+  --verbose) progress=plain ;;
   -h | --help) usage ;;
   *) ;; # unknown option
   esac
