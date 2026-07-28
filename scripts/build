@@ -17,8 +17,9 @@ usage() {
   printf "Usage: %s [OPTIONS]\n" "${0}"
   printf "Options:\n"
   printf "  --android API_LEVEL (default: %s)\n" "${DEFAULT_ANDROID}"
-  printf "  --jdk VERSION       (default: %s)\n" "${DEFAULT_JDK}"
+  printf "  --container         (optional, build with Apple Container)\n"
   printf "  --docker            (optional, build with Docker)"
+  printf "  --jdk VERSION       (default: %s)\n" "${DEFAULT_JDK}"
   printf "  --platforms         (default: %s)\n" "${DEFAULT_PLATFORMS}"
   printf "  --podman            (optional, build with Podman)"
   printf "  --push              (optional, upload images to Docker Hub)\n"
@@ -37,6 +38,7 @@ while [ $# -gt 0 ]; do
   key="$1"
   case $key in
   --android) android="$2" shift ;; # past argument
+  --container) tool="container" ;;
   --docker) tool="docker" ;;
   --jdk) jdk="$2" shift ;;             # past argument
   --platforms) platforms="$2" shift ;; # past argument
