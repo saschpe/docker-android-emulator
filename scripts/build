@@ -18,13 +18,13 @@ usage() {
   printf "Options:\n"
   printf "  --android API_LEVEL (default: %s)\n" "${DEFAULT_ANDROID}"
   printf "  --container         (optional, build with Apple Container)\n"
-  printf "  --docker            (optional, build with Docker)"
+  printf "  --docker            (optional, build with Docker)\n"
   printf "  --jdk VERSION       (default: %s)\n" "${DEFAULT_JDK}"
   printf "  --platforms         (default: %s)\n" "${DEFAULT_PLATFORMS}"
-  printf "  --podman            (optional, build with Podman)"
+  printf "  --podman            (optional, build with Podman)\n"
   printf "  --push              (optional, upload images to Docker Hub)\n"
   printf "  --verbose           (optional)\n"
-  exit 1
+  exit 0
 }
 
 # Command-line arguments

@@ -6,8 +6,7 @@
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/saschpe/android-emulator)](https://hub.docker.com/r/saschpe/android-emulator)
 
 Android SDK OCI image based on Docker image [saschpe/android-sdk](https://hub.docker.com/r/saschpe/android-sdk) with
-pre-installed build-tools, latest command-line
-tools and JDK 17 (or later) as well as the Android Emulator.
+pre-installed build-tools, latest command-line tools and JDK 17 (or later) as well as the Android Emulator.
 
 ## Android SDK and JDK support
 
