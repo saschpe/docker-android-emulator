@@ -7,10 +7,10 @@
 #
 # Build with custom arguments:
 #
-#   $ ./scripts/build --android 35 --jdk 23.0.2_7
+#   $ ./scripts/build --android 35 --jdk 25.0.4_7
 
-ARG android=35
-ARG jdk=23.0.2_7
+ARG android=37.2
+ARG jdk=25.0.4_7
 
 FROM saschpe/android-sdk:${android}-jdk${jdk}
 ARG android
@@ -20,8 +20,6 @@ LABEL description="Android SDK ${android} using JDK ${jdk} with Android Emulator
 
 ENV DEBIAN_FRONTEND=noninteractive
 USER root
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ubuntu-desktop-minimal
+RUN apt-get update && apt-get install -y --no-install-recommends ubuntu-desktop-minimal
 USER nonroot
-RUN sdkmanager --install \
-    emulator
+RUN android sdk install emulator
